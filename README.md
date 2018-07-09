@@ -15,3 +15,9 @@ This workflow is written in Python. And used Boto3 as AWS client to upload image
 4. Select `Upload to S3`
 5. Wait until you receive public url in push notification
 6. Now you can paste the public url in browser to see the image from S3
+
+## Tutorials
+
+Check out my blog to see how I made this workflow:
+
+https://tonyxu.io/posts/create-alfred-workflow-for-uploading-screenshot-to-s3/
