@@ -7,6 +7,10 @@ This workflow is especially helpful if you are a markdown fan and you can easily
 
 This workflow is written in Python. And used Boto3 as AWS client to upload image.
 
+## Download
+
+https://github.com/tonyxu-io/Alfred-Workflow-Upload-S3/releases
+
 ## Usage
 
 1. Take a screenshot using `Command` + `Control` + `Shift` + `4`
