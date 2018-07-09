@@ -1,0 +1,69 @@
+Metadata-Version: 2.1
+Name: pngquant
+Version: 1.0.6
+Summary: A Python Wrapper of pngquant
+Home-page: https://github.com/Brightcells/pngquant
+Author: Hackathon
+Author-email: kimi.huang@brightcells.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.6
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.2
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Dist: Pillow
+
+========
+pngquant
+========
+
+Pngquant is a command-line utility and a library for lossy compression of PNG images.
+
+And This Library Is A Python Wrapper Of Pngquant
+
+Install Pngquant
+================
+
+* https://pngquant.org/
+
+* [pngquant 2.0 for ubuntu 12.04 not available](http://askubuntu.com/questions/469171/pngquant-2-0-for-ubuntu-12-04-not-available)
+
+Install Python Wrapper Of Pngquant
+==================================
+
+::
+
+    pip install pngquant
+
+
+Usage
+=====
+
+::
+
+    import pngquant
+
+    pngquant.config('~/pngquant/pngquant')
+    pngquant.quant_image('~/pngquant/pngquant/pngquant.png')
+
+
+Method
+======
+
+::
+
+    def config(self, quant_file=None, min_quality=None, max_quality=None, ndeep=None, ndigits=None, tmp_file=None):
+
+    def quant_data(self, data=None, dst=None, ndeep=None, ndigits=None, delete=True):
+
+    def quant_image(self, image=None, dst=None, ndeep=None, ndigits=None, override=True, delete=True):
+
+    def quant_dir(self, dir=None, dst=None, ndeep=None, ndigits=None, override=True, delete=True, topdown=True):
+
+

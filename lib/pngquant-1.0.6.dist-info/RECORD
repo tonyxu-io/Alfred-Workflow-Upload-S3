@@ -1,0 +1,11 @@
+pngquant/__init__.py,sha256=9mpRO8iHdnyPhSizV7-OSmQwpfZC4XDxNydS-F86CDE,90
+pngquant/compat.py,sha256=atlJJ4f4YIaqJSdKmPngWcGRZH-oB1rBsdliUtmaGz4,514
+pngquant/main.py,sha256=PTWr26mSc_-CwlgIXTvAb0SQwMBqUoCI1oUfa1S8eT0,12604
+pngquant-1.0.6.dist-info/METADATA,sha256=IM_0M-v6-ctQswJNLmiYzw1jzI0V7JEsA2fJNzCwdW8,1816
+pngquant-1.0.6.dist-info/RECORD,,
+pngquant-1.0.6.dist-info/WHEEL,sha256=gduuPyBvFJQSQ0zdyxF7k0zynDXbIbvg5ZBHoXum5uk,110
+pngquant-1.0.6.dist-info/top_level.txt,sha256=O5nAZSKwh1aKmPAmgSD5DFgAmyt4VKFPjb4QnhUQyns,9
+pngquant-1.0.6.dist-info/INSTALLER,sha256=zuuue4knoyJ-UwPPXg8fezS7VCrXJQrAP7zeNuwvFQg,4
+pngquant/compat.pyc,,
+pngquant/__init__.pyc,,
+pngquant/main.pyc,,
