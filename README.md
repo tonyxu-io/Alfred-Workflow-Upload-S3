@@ -13,13 +13,17 @@ https://github.com/tonyxu-io/Alfred-Workflow-Upload-S3/releases
 
 ## Usage
 
-1. Take a screenshot using `Command` + `Control` + `Shift` + `4`
-2. Bring up Alfred
-3. Type `Upload`
-    1. Select `Upload Clipboard Image` to directly upload image in your clipboard
-    2. Select `Upload Local Image` and search your image file to upload image from your local disk, then type enter
-4. Wait until you receive public url in push notification
-5. Now you can paste the public url in browser to see the image from S3
+Upload image from clipboard:
+
+```
+upload
+```
+
+Upload image from local:
+
+```
+upload TYPE-FILENAME-HERE
+```
 
 ## Tutorials
 
