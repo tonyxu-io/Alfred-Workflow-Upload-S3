@@ -21,6 +21,19 @@
 				<false/>
 			</dict>
 		</array>
+		<key>31D1E44D-45E4-4BEE-B568-B1C960ED9431</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>FA0DA979-D335-47AA-B113-92BCA60A3DA2</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>FA0DA979-D335-47AA-B113-92BCA60A3DA2</key>
 		<array>
 			<dict>
@@ -48,11 +61,11 @@
 	<key>createdby</key>
 	<string>Tony Xu</string>
 	<key>description</key>
-	<string>Upload image in clipboard to S3</string>
+	<string>Upload image to S3</string>
 	<key>disabled</key>
 	<false/>
 	<key>name</key>
-	<string>Upload Clipboard Image to S3</string>
+	<string>Upload Image to S3</string>
 	<key>objects</key>
 	<array>
 		<dict>
@@ -82,7 +95,7 @@
 				<key>subtext</key>
 				<string></string>
 				<key>text</key>
-				<string>Upload to S3</string>
+				<string>Upload Clipboard Image</string>
 				<key>withspace</key>
 				<false/>
 			</dict>
@@ -101,9 +114,9 @@
 				<key>escaping</key>
 				<integer>102</integer>
 				<key>script</key>
-				<string>python upload-s3.py</string>
+				<string>python upload-s3.py "{query}"</string>
 				<key>scriptargtype</key>
-				<integer>1</integer>
+				<integer>0</integer>
 				<key>scriptfile</key>
 				<string></string>
 				<key>type</key>
@@ -137,6 +150,83 @@
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>anchorfields</key>
+				<true/>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
+				<key>argumenttype</key>
+				<integer>0</integer>
+				<key>daterange</key>
+				<integer>0</integer>
+				<key>fields</key>
+				<array>
+					<dict>
+						<key>field</key>
+						<string>kMDItemDisplayName</string>
+						<key>not</key>
+						<false/>
+						<key>split</key>
+						<true/>
+						<key>value</key>
+						<string>{query}</string>
+						<key>words</key>
+						<true/>
+					</dict>
+					<dict>
+						<key>field</key>
+						<string>kMDItemAlternateNames</string>
+						<key>not</key>
+						<false/>
+						<key>split</key>
+						<true/>
+						<key>value</key>
+						<string>{query}</string>
+						<key>words</key>
+						<true/>
+					</dict>
+					<dict>
+						<key>field</key>
+						<string>kMDItemFinderComment</string>
+						<key>not</key>
+						<false/>
+						<key>split</key>
+						<true/>
+						<key>value</key>
+						<string>{query}</string>
+						<key>words</key>
+						<true/>
+					</dict>
+				</array>
+				<key>includesystem</key>
+				<false/>
+				<key>keyword</key>
+				<string>upload</string>
+				<key>runningsubtext</key>
+				<string></string>
+				<key>scopes</key>
+				<array/>
+				<key>subtext</key>
+				<string></string>
+				<key>title</key>
+				<string>Upload Local Image</string>
+				<key>types</key>
+				<array>
+					<string>public.jpeg</string>
+					<string>public.png</string>
+				</array>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.filefilter</string>
+			<key>uid</key>
+			<string>31D1E44D-45E4-4BEE-B568-B1C960ED9431</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
 	</array>
 	<key>readme</key>
 	<string></string>
@@ -148,6 +238,13 @@
 			<integer>290</integer>
 			<key>ypos</key>
 			<integer>170</integer>
+		</dict>
+		<key>31D1E44D-45E4-4BEE-B568-B1C960ED9431</key>
+		<dict>
+			<key>xpos</key>
+			<integer>290</integer>
+			<key>ypos</key>
+			<integer>310</integer>
 		</dict>
 		<key>4E4B65E9-E2A0-45AC-976E-F53632095370</key>
 		<dict>
@@ -192,6 +289,6 @@
 	<key>version</key>
 	<string></string>
 	<key>webaddress</key>
-	<string></string>
+	<string>https://tonyxu.io</string>
 </dict>
 </plist>

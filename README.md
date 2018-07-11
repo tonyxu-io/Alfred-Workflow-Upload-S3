@@ -1,6 +1,6 @@
-# Alfred Workflow: Upload Clipboard Image to AWS S3
+# Alfred Workflow: Upload Image to AWS S3
 
-This workflow helps you upload image in your clipboard to S3 and put the public url of the image to your clipboard.
+This workflow helps you upload image in your clipboard or local disk to S3 and put the public url of the image to your clipboard.
 This workflow is especially helpful if you are a markdown fan and you can easily get public url and use it in markdown document.
 
 ## Overview
@@ -16,9 +16,10 @@ https://github.com/tonyxu-io/Alfred-Workflow-Upload-S3/releases
 1. Take a screenshot using `Command` + `Control` + `Shift` + `4`
 2. Bring up Alfred
 3. Type `Upload`
-4. Select `Upload to S3`
-5. Wait until you receive public url in push notification
-6. Now you can paste the public url in browser to see the image from S3
+    1. Select `Upload Clipboard Image` to directly upload image in your clipboard
+    2. Select `Upload Local Image` and search your image file to upload image from your local disk, then type enter
+4. Wait until you receive public url in push notification
+5. Now you can paste the public url in browser to see the image from S3
 
 ## Tutorials
 
