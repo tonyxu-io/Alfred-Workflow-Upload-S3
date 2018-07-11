@@ -30,14 +30,13 @@ def main(wf):
     import boto3
     file_path, file_name = capture()
     bucket_name = os.getenv('bucket_name')
-    region_name = os.getenv('region_name')
     s3 = boto3.client(
         's3',
         aws_access_key_id=os.getenv('access_key'),
         aws_secret_access_key=os.getenv('secret_key')
     )
     s3.upload_file(file_path, bucket_name, file_name, ExtraArgs={'ContentType': "image/png"})
-    output = "https://s3-%s.amazonaws.com/%s/%s" %(region_name, bucket_name, file_name)
+    output = "%s/%s" %(os.getenv('bucket_uri'), file_name)
     print (output,end='')
 
 if __name__ == '__main__':

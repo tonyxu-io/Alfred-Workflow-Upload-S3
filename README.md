@@ -13,15 +13,22 @@ https://github.com/tonyxu-io/Alfred-Workflow-Upload-S3/releases
 
 ## Usage
 
+Config Environment Variables:
+
+- access_key: S3 access key
+- secret_key: S3 access secret
+- bucket_name: S3 bucket name. e.g. `my-bucket-name`
+- bucket_uri: S3 bucket uri without trailing slash. e.g. `https://s3-us-west-1.amazonaws.com/my-bucket-name`
+
 Upload image from clipboard:
 
-```
+```bash
 upload
 ```
 
 Upload image from local:
 
-```
+```bash
 upload TYPE-FILENAME-HERE
 ```
 
